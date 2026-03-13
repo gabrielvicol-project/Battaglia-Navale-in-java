@@ -567,9 +567,7 @@ public class BattagliaNavale extends JFrame {
 
         JLabel lblIp = plain("📡 IP: " + myIp + "  |  porta: " + PORT + "  →  Comunica il codice al guest una volta connesso", 11);
         lblIp.setHorizontalAlignment(SwingConstants.CENTER); lblIp.setForeground(new Color(90,200,90)); lblIp.setBorder(pad(0,0,6,0));
-        // inserisci in cima sotto il titolo
-        JLabel orig = (JLabel)((JPanel)root.getComponent(0));  // già presente, skip – lo aggiungiamo altrove
-        root.add(lblIp, BorderLayout.SOUTH);   // sotto il pannello
+        root.add(lblIp, BorderLayout.SOUTH);
 
         setContentPane(root); revalidate(); repaint();
     }
